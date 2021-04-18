@@ -1,0 +1,60 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Duality</title>
+  <link rel="stylesheet" href="coolStuff/styles.css">
+</head>
+<body onload = "load()">
+  <canvas id="canvas" style="margin: 0px; padding: 0px"></canvas>
+
+  <div class="tabs">
+    <button id="spaceTimeTab" class="tab spaceTime" onclick="tab(1)" onload="tab(1)">Core</button>
+    <button id="dualTab" class="tab duality" onclick="tab(2)" style="display:none">Duality</button>
+    <button class="tab fadeIn" onclick="tab(3)">Options</button>
+    <button class="tab fadeIn" onclick="tab(4)">Statistics</button>
+  </div>
+
+  <div id="Main" class="tabcontent fadeIn">
+    <div>
+      <div class="tile">
+        <p>You have <span id="love" class="important">0</span> Love.</p>
+      </div>
+      <div class="tile">
+        <p>You have <span id="hate" class="important">0</span> Hate.</p>
+      </div>
+    </div>
+    <div>
+      <div class="tile">
+        <button onclick="">Buy somethingggg</button>
+      </div>
+      <div class="tile">
+      </div>
+    </div>
+  </div>
+      
+  <div id="Matter" class="tabcontent fadeIn matter" style="display:none">
+    <p>Congrats, you beat the game, for now. Check back later!<br>
+  </div>
+
+  <div id="Options" class="tabcontent fadeIn">
+    <h3>Options</h3>
+    <button class="option" onclick="reset()"> RESET THE GAME</button>
+    <button class="option" onclick="save()">Save Game</button>
+  </div>
+
+  <div id="Statistics" class="tabcontent fadeIn">
+    <h3>Stats</h3>
+    <p>Time played: <span id=playtime>X</span></p>
+    <p>
+      STATISTICS
+    </p>
+  </div>
+
+  <script src="break_infinity.js"></script>
+  <script src="main.js"></script>
+  <script src="content/lovehate.js"></script>
+  <script src="coolStuff/format.js"></script>
+  <!--<script src="core/format.js"></script>
+  <script src="render/canvas.js"></script>-->
+</body>
+</html>
