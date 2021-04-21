@@ -9,7 +9,9 @@ let basePlayer = {
     //stage: 0,
 
     love: D(1),
-    hate: D(1),
+    dLove: D(0),
+    hate: D(0),
+    //dHate: D(0), //We dont need it yet. 
 
     dual: D(0), //Might not have to be a decimal?
     upgs: [false, false, false, false],
@@ -36,7 +38,7 @@ function tab(tabID) {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
   
-    getEl([null, "Main", "Matter", "Options", "Statistics", "DevLog"][tabID]).style.display = "block";
+    getEl([null, "Main", "Duality", "Options", "Statistics", "DevLog"][tabID]).style.display = "block";
     //setUpCanvas(tabID)
 }
 
